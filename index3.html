@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeSell</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<!-- Czarny pasek -->
+<header>
+    <div class="header-content">
+        <img src="https://st2.depositphotos.com/1116329/11882/v/950/depositphotos_118824632-stock-illustration-samara-russia-august-4-2016.jpg"
+             alt="Logo" class="logo">
+        <h1>PokeSell</h1>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <button onclick="location.href='index.html'" class="button-red-pushable" role="button">
+                    <span class="button-red-shadow"></span>
+                    <span class="button-red-edge"></span>
+                    <span class="button-red-front">Add to Cart</span></button>
+            </li>
+            <li>
+                <button onclick="location.href='index2.html'" class="button-red-pushable" role="button">
+                    <span class="button-red-shadow"></span>
+                    <span class="button-red-edge"></span>
+                    <span class="button-red-front">Login</span></button>
+            </li>
+            <li>
+                <button onclick="location.href='index3.html'" class="button-red-pushable" role="button">
+                    <span class="button-red-shadow"></span>
+                    <span class="button-red-edge"></span>
+                    <span class="button-red-front">Market</span></button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <h1 class="page-title">Pokemon Market</h1>
+
+    <form method="post" class="form-style">
+        <div class="form-group">
+            <label for="image_url">Image URL</label>
+            <input type="text" name="image_url" id="image_url" placeholder="Enter image URL"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="card_name">Card Name</label>
+            <input type="text" name="card_name" id="card_name" placeholder="Enter the name of a card"><br><br>
+        </div>
+
+        <div class="form-group">
+            <label for="rarity">Rarity</label>
+            <select name="rarity" id="rarity">
+                <option value="" disabled selected>Select Rarity</option>
+                <option value="Common">Common</option>
+                <option value="Uncommon">Uncommon</option>
+                <option value="Rare">Rare</option>
+                <option value="Holo Rare">Holo Rare</option>
+                <option value="Ultra Rare">Ultra Rare</option>
+                <option value="Secret Rare">Secret Rare</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" placeholder="Enter the price"><br><br>
+        </div>
+
+        <button type="submit" class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front">Confirm</span>
+        </button>
+    </form>
+    <br>
+
+    <a href="index.html">
+        <button type="button" class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front">Back to Main Page</span>
+        </button>
+    </a>
+</main>
+
+<!-- Stopka -->
+<footer>
+    <p>&copy; 2024 PokéStore. All rights reserved.</p>
+    <p><a href="mailto:contact@pokestore.com">Contact Us</a></p>
+</footer>
 </body>
 </html>

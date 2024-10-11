@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<!-- Czarny pasek -->
+<header>
+    <div class="header-content">
+        <img src="https://st2.depositphotos.com/1116329/11882/v/950/depositphotos_118824632-stock-illustration-samara-russia-august-4-2016.jpg"
+             alt="Logo" class="logo">
+        <h1>Login</h1>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <button onclick="location.href='index.html'" class="button-red-pushable" role="button">
+                    <span class="button-red-shadow"></span>
+                    <span class="button-red-edge"></span>
+                    <span class="button-red-front">Add to Cart</span></button>
+            </li>
+            <li>
+                <button onclick="location.href='index2.html'" class="button-red-pushable" role="button">
+                    <span class="button-red-shadow"></span>
+                    <span class="button-red-edge"></span>
+                    <span class="button-red-front">Login</span></button>
+            </li>
+            <li>
+                <button onclick="location.href='index3.html'" class="button-red-pushable" role="button">
+                    <span class="button-red-shadow"></span>
+                    <span class="button-red-edge"></span>
+                    <span class="button-red-front">Market</span></button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main -->
+<main>
+    <h2 class="page-title">Login to Your Account</h2>
+
+    <form method="post" class="form-style">
+        <div class="form-group">
+            <label style="" for="username">Username</label>
+            <input type="text" id="username" name="username"><br>
+        </div>
+
+        <div class="form-group">
+            <label style="" for="password">Password</label>
+            <input type="password" id="password" name="password"><br><br>
+        </div>
+
+        <button type="submit" class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front">Login</span>
+        </button>
+    </form>
+    <br>
+
+    <a href="index.html">
+        <button type="button" class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front">Back to Main Page</span>
+        </button>
+    </a>
+</main>
+
+<!-- Stopka -->
+<footer>
+    <p>&copy; 2024 PokéStore. All rights reserved.</p>
+    <p><a href="mailto:contact@pokestore.com">Contact Us</a></p>
+</footer>
 </body>
 </html>
