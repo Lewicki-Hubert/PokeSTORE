@@ -27,16 +27,17 @@ header {
 
 .logo {
     height: 60px;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: transparent;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-family: FreeMono, monospace;
     margin: 0;
+    padding-left: 5px;
     font-weight: bold;
 }
 
@@ -47,17 +48,6 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 
@@ -72,10 +62,7 @@ footer {
     text-align: center;
     text-color: white;
     padding: 10px;
-    position: relative;
-    bottom: 0;
     width: 100vw;
-    left: 0;
 }
 
 footer a {
@@ -115,13 +102,10 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
 
 
 .card-image {
-    width: 80px;
+    width: 90px;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -132,30 +116,13 @@ button {
     background-color: transparent;
     color: white;
     border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
 }
 
-/* Green button */
-.button-classic {
-    background-color: #2ad725;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-}
 
-.button-classic:hover {
-    background-color: #359320;
-}
-
-/* Button-82 styles */
+/* Red Button */
 .button-red-pushable {
     position: relative;
     border: none;
@@ -241,7 +208,7 @@ button {
     outline: none;
 }
 
-/* Red button */
+/* Green button */
 .button-green-pushable {
     position: relative;
     border: none;
@@ -328,7 +295,7 @@ button {
 }
 
 
-/* ================= FORMS ================= */
+/* Forms */
 .form-style {
     max-width: 400px;
     margin: 0 auto;
@@ -354,7 +321,13 @@ button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 
@@ -378,19 +351,21 @@ button {
 }
 
 .form-group select:hover {
-    border-color: #888;
+    border-color: #8a8a8a;
 }
 
 
 .form-group select:focus {
     outline: none;
     border-color: #2ad725;
-    box-shadow: 0 0 5px rgba(42, 215, 37, 0.5);
+    box-shadow: 0 0 5px rgba(42, 215, 37, 0.43);
 }
 
-/* tekst na środku */
+
+/* tekst wyśrodkowany */
 .centered-text {
-    font-size: 24px;
+    font-family: FreeMono, monospace;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     margin: 20px 0;
