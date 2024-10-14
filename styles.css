@@ -78,7 +78,7 @@ footer a:hover {
 
 /* tabela */
 table {
-    width: 100%;
+    width: 80%;
     margin: 20px auto 0;
     border-collapse: collapse;
     background-color: #f9f9f9;
@@ -101,7 +101,6 @@ td {
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
-
 
 
 .card-image {
@@ -324,7 +323,7 @@ button {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus {
     outline: none;
     border-color: red;
     box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
@@ -370,5 +369,28 @@ input[type="password"]:focus{
     font-weight: bold;
     margin: 20px 0;
 }
+
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    nav {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    iframe {
+        display: none;
+    }
+}
+
 
 
